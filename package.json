@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --mode development",
-    "build": "webpack --mode production"
+    "start-dev": "nodemon src/server/server.js",
+    "build": "webpack --mode production",
+    "start": "src/server/server.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,11 @@
     "webpack-cli": "^2.1.4"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "isomorphic-fetch": "^2.2.1",
+    "mongojs": "^2.6.0",
+    "nodemon": "^1.17.5",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   }
